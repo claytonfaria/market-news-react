@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './TickerBar.module.css';
+import Ticker from 'react-ticker';
 
 function TickerBar() {
   const [ticker, setTicker] = useState([
@@ -21,19 +21,67 @@ function TickerBar() {
       change: -28.83,
       changepct: -1.93,
     },
+    {
+      name: 'PETR',
+      amount: 110.08,
+      change: 3.24,
+      changepct: 3.03,
+    },
+    {
+      name: 'VALE',
+      amount: 202.54,
+      change: 2.15,
+      changepct: 1.07,
+    },
+    {
+      name: 'BBDC',
+      amount: 1431,
+      change: -28.83,
+      changepct: -1.93,
+    },
+    {
+      name: 'B3SA',
+      amount: 110.08,
+      change: 3.24,
+      changepct: 3.03,
+    },
+    {
+      name: 'LOGN',
+      amount: 202.54,
+      change: 2.15,
+      changepct: 1.07,
+    },
+    {
+      name: 'COGN',
+      amount: 1431,
+      change: -28.83,
+      changepct: -1.93,
+    },
   ]);
 
+  const getColor = (item) => (item > 0 ? ' text-success' : ' text-danger');
+
   return (
-    <div className={styles.tickerwrap}>
-      {ticker.map((item, index) => (
-        <div key={index} className={styles.ticker}>
-          <h6 className={styles.tickeritem}>{item.name}</h6>
-          <h6 className={styles.tickeritem}>{item.amount}</h6>
-          <h6 className={styles.tickeritem}>{item.change}</h6>
-          <h6 className={styles.tickeritem}>{item.changepct}</h6>
+    <Ticker offset="100%">
+      {() => (
+        <div className="d-flex">
+          {ticker.map((item, index) => (
+            <div key={index} className="d-flex p-2">
+              <h6 className="px-1">{item.name}</h6>
+              <h6 className="px-1">{item.amount}</h6>
+              <h6 className={'px-1' + getColor(item.change)}>
+                {item.change > 0 && '+'}
+                {item.change}
+              </h6>
+              <h6 className={'px-1' + getColor(item.changepct)}>
+                ({item.change > 0 && '+'}
+                {item.changepct}%)
+              </h6>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      )}
+    </Ticker>
   );
 }
 
