@@ -33,38 +33,14 @@ function TickerBar() {
       change: 2.15,
       changepct: 1.07,
     },
-    {
-      name: 'BBDC',
-      amount: 1431,
-      change: -28.83,
-      changepct: -1.93,
-    },
-    {
-      name: 'B3SA',
-      amount: 110.08,
-      change: 3.24,
-      changepct: 3.03,
-    },
-    {
-      name: 'LOGN',
-      amount: 202.54,
-      change: 2.15,
-      changepct: 1.07,
-    },
-    {
-      name: 'COGN',
-      amount: 1431,
-      change: -28.83,
-      changepct: -1.93,
-    },
   ]);
 
   const getColor = (item) => (item > 0 ? ' text-success' : ' text-danger');
 
   return (
-    <Ticker offset="100%">
+    <Ticker speed={4}>
       {() => (
-        <div className="d-flex">
+        <div className="d-flex py-1">
           {ticker.map((item, index) => (
             <div key={index} className="d-flex p-2">
               <h6 className="px-1">{item.name}</h6>

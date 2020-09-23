@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './NavBar.module.css';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -12,8 +11,9 @@ function NavBar() {
   return (
     <Navbar bg="light" expand="md" className="border-bottom">
       <Container>
-        <Navbar.Brand className={styles.logo} href="#home">
-          <span>Market</span> News
+        <Navbar.Brand href="#home">
+          <span style={{ color: 'firebrick', fontWeight: 'bold' }}>Market</span>
+          News
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
