@@ -1,63 +1,52 @@
 import React, { useState } from 'react';
-import Ticker from 'react-ticker';
+import { TradingViewEmbed, widgetType } from 'react-tradingview-embed';
 
 function TickerBar() {
-  const [ticker, setTicker] = useState([
-    {
-      name: 'AAPL',
-      amount: 110.08,
-      change: 3.24,
-      changepct: 3.03,
-    },
-    {
-      name: 'MSFT',
-      amount: 202.54,
-      change: 2.15,
-      changepct: 1.07,
-    },
-    {
-      name: 'GOOG',
-      amount: 1431,
-      change: -28.83,
-      changepct: -1.93,
-    },
-    {
-      name: 'PETR',
-      amount: 110.08,
-      change: 3.24,
-      changepct: 3.03,
-    },
-    {
-      name: 'VALE',
-      amount: 202.54,
-      change: 2.15,
-      changepct: 1.07,
-    },
-  ]);
-
-  const getColor = (item) => (item > 0 ? ' text-success' : ' text-danger');
-
   return (
-    <Ticker speed={4}>
-      {() => (
-        <div className="d-flex py-1">
-          {ticker.map((item, index) => (
-            <div key={index} className="d-flex p-2">
-              <h6 className="px-1">{item.name}</h6>
-              <h6 className="px-1">{item.amount}</h6>
-              <h6 className={'px-1' + getColor(item.change)}>
-                {item.change > 0 && '+'}
-                {item.change}
-              </h6>
-              <h6 className={'px-1' + getColor(item.changepct)}>
-                ({item.change > 0 && '+'}
-                {item.changepct}%)
-              </h6>
-            </div>
-          ))}
-        </div>
-      )}
-    </Ticker>
+    <div className="App" style={{ background: 'rgba(0, 0, 0, 0.85)' }}>
+      <TradingViewEmbed
+        widgetType={widgetType.TICKER_TAPE}
+        widgetConfig={{
+          colorTheme: 'light',
+          autosize: true,
+          symbols: [
+            {
+              proName: 'FOREXCOM:SPXUSD',
+              title: 'S&P 500',
+            },
+            {
+              proName: 'FOREXCOM:NSXUSD',
+              title: 'Nasdaq 100',
+            },
+            {
+              proName: 'FOREXCOM:DJI',
+              title: 'Dow Jones',
+            },
+            {
+              proName: 'FX:EURUSD',
+              title: 'EUR/USD',
+            },
+            {
+              proName: 'BITSTAMP:BTCUSD',
+              title: 'BTC/USD',
+            },
+            {
+              description: 'IBOVESPA',
+              proName: 'INDEX:IBOV',
+            },
+            {
+              description: 'DAX',
+              proName: 'XETR:DAX',
+            },
+            {
+              description: 'NKY',
+              proName: 'INDEX:NKY',
+            },
+          ],
+        }}
+        copyrightLink={false}
+      />
+    </div>
   );
 }
 

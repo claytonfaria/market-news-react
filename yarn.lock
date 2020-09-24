@@ -8782,10 +8782,10 @@ react-scripts@3.4.3:
   optionalDependencies:
     fsevents "2.1.2"
 
-react-ticker@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/react-ticker/-/react-ticker-1.2.2.tgz#12cda5ff8266c6fe90ffcd8c58e12ba1596ddf24"
-  integrity sha512-PXUujoPJvajxwOfosuuujlrBUrjgGp4FB4haWFOI25ujhMppW4SuLkiOdQ9AylrWN3yTHWdk2kbQWe3n9SjFGA==
+react-tradingview-embed@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-tradingview-embed/-/react-tradingview-embed-1.0.2.tgz#5fc8a3f48aff16877bc2484760da910ccd46c2ac"
+  integrity sha512-9uHydsSMCZsuLkFaZZ97eCpTMD+NsFp2Vs2tZdV/Uod5+mpEFmKorxAcqVx0N4BRhkke1r+IsnqoFrLse27ZRQ==
 
 react-transition-group@^4.4.1:
   version "4.4.1"

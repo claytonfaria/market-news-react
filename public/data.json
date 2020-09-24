@@ -1,0 +1,28 @@
+[
+  {
+    "source": {
+      "id": "the-washington-post",
+      "name": "The Washington Post"
+    },
+    "author": "Mark Berman, Marisa Iati, Abigail Hauslohner, Keith McMillan, Holly Bailey, Hannah Knowles, Meryl Kornfield, Mark Guarino, Timothy Bella",
+    "title": "Two officers shot, suspect in custody amid night of unrest after grand jury decision on Breonna Taylor case - The Washington Post",
+    "description": "Louisville police fatally shot Breonna Taylor, a 26-year-old Black woman, at her apartment in March. Taylor’s name has become a rallying cry for policing overhauls and racial justice nationwide.",
+    "url": "https://www.washingtonpost.com/nation/2020/09/24/breonna-taylor-charging-decision-protests/",
+    "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/7NQ63DH6HAI6VMHEGUHE4YGMSE.jpg&w=1440",
+    "publishedAt": "2020-09-24T07:41:00Z",
+    "content": "At least four protest marches proceeded peacefully throughout Chicago early Wednesday evening as hundreds of people seized upon the news that no Louisville police were indicted in the killing of Breo… [+2206 chars]"
+  },
+  {
+    "source": {
+      "id": "engadget",
+      "name": "Engadget"
+    },
+    "author": "",
+    "title": "Microsoft is releasing a non-subscription Office suite in 2021 - Engadget",
+    "description": "The company has been pushing Microsoft 365 for years now as the main way to get its Office apps.",
+    "url": "https://www.engadget.com/microsoft-non-subscription-office-suite-2021-072127104.html",
+    "urlToImage": "https://heise.cloudimg.io/bound/1200x1200/q85.png-lossy-85.webp-lossy-85.foil1/_www-heise-de_/imgs/18/2/9/7/4/1/4/0/GigaBerlin-Desktop-V4-4cf3e50d28a7049d.jpeg",
+    "publishedAt": "2020-09-24T07:22:26Z",
+    "content": "In a blog post announcing the next version of its Exchange Server, Microsoft has slipped in a single line that’s bound to make those who hate paying subscription fees for Office apps happy. “Microsof… [+683 chars]"
+  }
+]
