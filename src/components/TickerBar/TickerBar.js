@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { TradingViewEmbed, widgetType } from 'react-tradingview-embed';
 
 function TickerBar() {

@@ -1,3 +1,13 @@
 * {
   font-family: 'Lato', sans-serif;
 }
+
+a:hover {
+  text-decoration: none;
+}
+
+h4,
+h5,
+p {
+  color: rgb(30, 34, 53);
+}

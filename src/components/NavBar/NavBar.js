@@ -9,8 +9,8 @@ import Container from 'react-bootstrap/Container';
 
 function NavBar() {
   return (
-    <Navbar bg="light" expand="md" className="border-bottom">
-      <Container>
+    <Navbar bg="light" expand="md" className="border-bottom sticky-top">
+      <Container fluid="lg">
         <Navbar.Brand href="#home">
           <span style={{ color: 'firebrick', fontWeight: 'bold' }}>Market</span>
           News
