@@ -1,11 +1,9 @@
 import React from 'react';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import FormControl from 'react-bootstrap/FormControl';
-import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
+import Example from './AutoComplete';
 
 function NavBar() {
   return (
@@ -27,10 +25,10 @@ function NavBar() {
             <Nav.Link href="#home">About</Nav.Link>
             <Nav.Link href="#link">Contact</Nav.Link>
           </Nav>
-          <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-success">Search</Button>
-          </Form>
+          <Example />
+          <a className="btn btn-outline-success my-2" href="#..">
+            Search
+          </a>
         </Navbar.Collapse>
       </Container>
     </Navbar>
