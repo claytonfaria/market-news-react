@@ -7,7 +7,6 @@ function StockOverview() {
       <section className="pb-5">
         <div className="container pb-2 d-flex justify-content-between">
           <h4 className="font-weight-bold">Stocks Overview</h4>
-          <h4 className="font-weight-bold">></h4>
         </div>
 
         <div style={{ width: '100%', height: '650px' }}>

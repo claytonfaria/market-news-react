@@ -1,7 +1,7 @@
 import React from 'react';
 import { TradingViewEmbed, widgetType } from 'react-tradingview-embed';
 
-function TickerBar() {
+function TickerTape() {
   return (
     <div className="App" style={{ background: 'rgba(0, 0, 0, 0.85)' }}>
       <TradingViewEmbed
@@ -9,7 +9,7 @@ function TickerBar() {
         widgetConfig={{
           colorTheme: 'light',
           autosize: true,
-          largeChartUrl: window.location.href + '{tvexchange}:{tvsymbol}',
+          largeChartUrl: window.location.origin + '/{tvexchange}:{tvsymbol}',
           symbols: [
             {
               proName: 'FOREXCOM:SPXUSD',
@@ -51,4 +51,4 @@ function TickerBar() {
   );
 }
 
-export default TickerBar;
+export default TickerTape;

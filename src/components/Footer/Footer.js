@@ -2,16 +2,16 @@ import React from 'react';
 
 function Footer() {
   return (
-    <div
+    <p
       className="bg-dark 
-    footer 
+    footer small
     d-flex 
     justify-content-center 
     align-items-center 
-    text-white p-3"
+    text-white p-2"
     >
       Copyright © 2020 MarketNews - All rights reserved.
-    </div>
+    </p>
   );
 }
 

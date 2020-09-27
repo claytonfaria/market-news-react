@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Example from './AutoComplete';
@@ -18,7 +18,7 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <NavDropdown title="Market" id="basic-nav-dropdown">
+            {/* <NavDropdown title="Market" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -28,7 +28,7 @@ function NavBar() {
 
             <Link className="nav-link" to="/contact">
               Contact
-            </Link>
+            </Link> */}
           </Nav>
           <Example />
           <a className="btn btn-outline-success my-2" href="#..">

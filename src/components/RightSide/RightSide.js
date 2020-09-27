@@ -7,9 +7,9 @@ import StockOverview from './StockOverview';
 function RightSide() {
   return (
     <>
+      <StockOverview />
       <MarketOverview />
       <EconomicCalendar />
-      <StockOverview />
     </>
   );
 }
