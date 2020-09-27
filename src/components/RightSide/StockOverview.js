@@ -16,6 +16,7 @@ function StockOverview() {
             widgetConfig={{
               colorTheme: 'light',
               autosize: true,
+              largeChartUrl: window.location.href + '{tvexchange}:{tvsymbol}',
             }}
             copyrightLink={false}
           />

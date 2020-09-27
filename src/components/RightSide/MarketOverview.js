@@ -7,7 +7,7 @@ function MarketOverview() {
       <section className="pb-5">
         <div className="container pb-2 d-flex justify-content-between">
           <h4 className="font-weight-bold">Market Overview</h4>
-          <h4 className="font-weight-bold">></h4>
+          <h4 className="font-weight-bold">{'>'}</h4>
         </div>
 
         <div style={{ width: '100%', height: '650px' }}>
@@ -16,6 +16,7 @@ function MarketOverview() {
             widgetConfig={{
               colorTheme: 'light',
               autosize: true,
+              largeChartUrl: window.location.href + '{tvexchange}:{tvsymbol}',
             }}
             copyrightLink={false}
           />

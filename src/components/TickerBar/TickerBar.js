@@ -9,6 +9,7 @@ function TickerBar() {
         widgetConfig={{
           colorTheme: 'light',
           autosize: true,
+          largeChartUrl: window.location.href + '{tvexchange}:{tvsymbol}',
           symbols: [
             {
               proName: 'FOREXCOM:SPXUSD',

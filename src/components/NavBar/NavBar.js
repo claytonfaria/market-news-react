@@ -4,15 +4,17 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Example from './AutoComplete';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
     <Navbar bg="light" expand="md" className="border-bottom sticky-top">
       <Container fluid="lg">
-        <Navbar.Brand href="#home">
+        <Link className="navbar-brand" to="/">
           <span style={{ color: 'firebrick', fontWeight: 'bold' }}>Market</span>
           News
-        </Navbar.Brand>
+        </Link>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -23,7 +25,10 @@ function NavBar() {
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#home">About</Nav.Link>
-            <Nav.Link href="#link">Contact</Nav.Link>
+
+            <Link className="nav-link" to="/contact">
+              Contact
+            </Link>
           </Nav>
           <Example />
           <a className="btn btn-outline-success my-2" href="#..">
