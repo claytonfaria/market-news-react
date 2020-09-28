@@ -3,9 +3,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Articles from '../components/Articles/Articles';
-import RightSide from '../components/RightSide/RightSide';
+import SideBar from '../components/SideBar/SideBar';
 
-function Homepage() {
+function Homepage({ news }) {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 990);
 
   const updateMedia = () => {
@@ -13,6 +13,7 @@ function Homepage() {
   };
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     window.addEventListener('resize', updateMedia);
     return () => window.removeEventListener('resize', updateMedia);
   }, []);
@@ -23,14 +24,14 @@ function Homepage() {
         {isDesktop ? (
           <Row className="pt-4">
             <Col lg={8}>
-              <Articles />
+              <Articles news={news} />
             </Col>
             <Col lg={4} className="px-1">
-              <RightSide />
+              <SideBar />
             </Col>
           </Row>
         ) : (
-          <Articles className="pt-4" />
+          <Articles news={news} className="pt-4" />
         )}
       </Container>
     </div>

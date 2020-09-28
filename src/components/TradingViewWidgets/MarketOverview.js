@@ -1,17 +1,15 @@
 import React from 'react';
 import { TradingViewEmbed, widgetType } from 'react-tradingview-embed';
 
-function StockOverview() {
+function MarketOverview() {
   return (
     <>
       <section className="pb-5">
-        <div className="container pb-2 d-flex justify-content-between">
-          <h4 className="font-weight-bold">Stocks Overview</h4>
-        </div>
+        <h4 className="font-weight-bold pb-2 px-2">Market Overview</h4>
 
         <div style={{ width: '100%', height: '650px' }}>
           <TradingViewEmbed
-            widgetType={widgetType.STOCK_MARKET}
+            widgetType={widgetType.MARKET_OVERVIEW}
             widgetConfig={{
               colorTheme: 'light',
               autosize: true,
@@ -25,4 +23,4 @@ function StockOverview() {
   );
 }
 
-export default StockOverview;
+export default MarketOverview;

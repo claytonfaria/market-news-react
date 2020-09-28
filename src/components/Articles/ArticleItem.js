@@ -10,7 +10,12 @@ function ArticleItem({ news }) {
   //     }
   //   };
   return (
-    <a href="#.." className={styles.articleItem}>
+    <a
+      href={news && news.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.articleItem}
+    >
       <div className={styles.articleImgContainer}>
         <img src={news.multimedia && news.multimedia[4].url} alt="" />
       </div>

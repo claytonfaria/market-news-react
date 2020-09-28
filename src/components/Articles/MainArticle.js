@@ -8,7 +8,12 @@ function MainArticle({ news }) {
 
   return (
     <>
-      <a href="#.." className={styles.mainArticle}>
+      <a
+        href={news.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.mainArticle}
+      >
         <img src={multimedia[0].url} alt="" />
         <div className={styles.mainArticleTitle}>
           <h5>{published_date}</h5>
