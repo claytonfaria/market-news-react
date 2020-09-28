@@ -13,7 +13,7 @@ function MarketOverview() {
             widgetConfig={{
               colorTheme: 'light',
               autosize: true,
-              largeChartUrl: window.location.href + '{tvexchange}:{tvsymbol}',
+              largeChartUrl: '',
             }}
             copyrightLink={false}
           />

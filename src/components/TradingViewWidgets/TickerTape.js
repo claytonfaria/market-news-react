@@ -8,7 +8,7 @@ function TickerTape() {
       widgetConfig={{
         colorTheme: 'light',
         autosize: true,
-        largeChartUrl: window.location.origin + '/{tvexchange}:{tvsymbol}',
+        largeChartUrl: '',
         symbols: [
           {
             proName: 'FOREXCOM:SPXUSD',

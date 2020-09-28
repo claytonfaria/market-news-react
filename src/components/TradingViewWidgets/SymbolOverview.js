@@ -16,7 +16,7 @@ function SymbolOverview({ ticker }) {
           colorTheme: 'light',
           autosize: true,
           symbols: [`${ticker}`],
-          largeChartUrl: window.location.href + '/{tvexchange}:{tvsymbol}',
+          largeChartUrl: '',
         }}
         copyrightLink={false}
       />

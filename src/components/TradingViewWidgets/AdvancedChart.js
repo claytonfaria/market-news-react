@@ -16,7 +16,7 @@ function AdvancedChart({ ticker }) {
           colorTheme: 'light',
           autosize: true,
           symbol: `${ticker}`,
-          largeChartUrl: window.location.href + '{tvexchange}:{tvsymbol}',
+          largeChartUrl: '',
         }}
         copyrightLink={false}
       />
