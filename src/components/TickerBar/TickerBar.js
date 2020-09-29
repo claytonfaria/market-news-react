@@ -3,7 +3,7 @@ import TickerTape from '../TradingViewWidgets/TickerTape';
 
 function TickerBar() {
   return (
-    <div className="App" style={{ background: 'rgba(0, 0, 0, 0.85)' }}>
+    <div style={{ background: 'rgba(0, 0, 0, 0.85)', pointerEvents: 'none' }}>
       <TickerTape />{' '}
     </div>
   );

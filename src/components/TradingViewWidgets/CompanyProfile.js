@@ -15,7 +15,8 @@ function CompanyProfile({ ticker }) {
           colorTheme: 'light',
           autosize: true,
           symbol: `${ticker}`,
-          largeChartUrl: '',
+          largeChartUrl:
+            'https://marketnews.netlify.app/{tvexchange}:{tvsymbol}',
         }}
         copyrightLink={false}
       />

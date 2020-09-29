@@ -16,7 +16,8 @@ function SymbolOverview({ ticker }) {
           colorTheme: 'light',
           autosize: true,
           symbols: [`${ticker}`],
-          largeChartUrl: '',
+          largeChartUrl:
+            'https://marketnews.netlify.app/{tvexchange}:{tvsymbol}',
         }}
         copyrightLink={false}
       />

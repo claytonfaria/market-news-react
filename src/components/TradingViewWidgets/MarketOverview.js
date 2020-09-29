@@ -13,7 +13,8 @@ function MarketOverview() {
             widgetConfig={{
               colorTheme: 'light',
               autosize: true,
-              largeChartUrl: '',
+              largeChartUrl:
+                'https://marketnews.netlify.app/{tvexchange}:{tvsymbol}',
             }}
             copyrightLink={false}
           />
