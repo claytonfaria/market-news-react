@@ -14,6 +14,8 @@ import MarketOverviewPage from './pages/MarketOverviewPage';
 import StocksOverviewPage from './pages/StocksOverviewPage';
 
 function App() {
+  const [screenPosition, setScreenPosition] = useState(0);
+
   const [updateSymbol, setUpdateSymbol] = useState(false);
   const [news, setNews] = useState([]);
 
@@ -32,10 +34,10 @@ function App() {
         <TickerBar />
         <Switch>
           <Route exact path="/">
-            <Homepage news={news} />
+            <Homepage setScreenPosition={setScreenPosition} news={news} />
           </Route>
           <Route exact path="/articles">
-            <MoreArticles news={news} />
+            <MoreArticles screenPosition={screenPosition} news={news} />
           </Route>
           <Route exact path="/calendar" component={Calendar} />
           <Route exact path="/marketoverview" component={MarketOverviewPage} />

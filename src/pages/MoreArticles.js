@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import ArticleItem from '../components/Articles/ArticleItem';
 
-function MoreArticles({ news }) {
+function MoreArticles({ news, screenPosition }) {
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: screenPosition });
+    // eslint-disable-next-line
   }, []);
   return (
     <div className="pt-4 container-lg">

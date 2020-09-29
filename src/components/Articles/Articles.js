@@ -1,10 +1,19 @@
 import React from 'react';
 import ArticleItem from './ArticleItem';
 import MainArticle from './MainArticle';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
-function Articles({ news }) {
+function Articles({ news, setScreenPosition }) {
+  let history = useHistory();
+
   if (!news) return null;
+
+  const handleOnClick = () => {
+    setScreenPosition(window.pageYOffset);
+    history.push('/articles');
+  };
+
   return (
     <>
       <main className="w-100">
@@ -14,9 +23,9 @@ function Articles({ news }) {
           <ArticleItem key={index} news={item} />
         ))}
       </main>
-      <Link to="/articles" className="btn btn-info mb-3">
+      <Button variant="info" className="mb-3" onClick={handleOnClick}>
         More Articles
-      </Link>
+      </Button>
     </>
   );
 }

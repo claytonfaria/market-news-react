@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Articles from '../components/Articles/Articles';
 import SideBar from '../components/SideBar/SideBar';
 
-function Homepage({ news }) {
+function Homepage({ news, setScreenPosition }) {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 990);
 
   const updateMedia = () => {
@@ -24,14 +24,18 @@ function Homepage({ news }) {
         {isDesktop ? (
           <Row className="pt-4">
             <Col lg={8}>
-              <Articles news={news} />
+              <Articles setScreenPosition={setScreenPosition} news={news} />
             </Col>
             <Col lg={4} className="px-1">
               <SideBar />
             </Col>
           </Row>
         ) : (
-          <Articles news={news} className="pt-4" />
+          <Articles
+            setScreenPosition={setScreenPosition}
+            news={news}
+            className="pt-4"
+          />
         )}
       </Container>
     </div>
