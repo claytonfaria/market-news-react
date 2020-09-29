@@ -16,7 +16,7 @@ function Articles({ news, setScreenPosition }) {
 
   return (
     <>
-      <main className="w-100">
+      <main className="w-100 min-vh-100">
         <MainArticle news={news[0]} />
 
         {news.slice(1, 12).map((item, index) => (

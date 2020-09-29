@@ -4,11 +4,11 @@ function Footer() {
   return (
     <p
       className="bg-dark 
-    footer small
+    small
     d-flex 
     justify-content-center 
     align-items-center 
-    text-white p-2"
+    text-white p-2 mb-0"
     >
       Copyright © 2020 MarketNews - All rights reserved.
     </p>
