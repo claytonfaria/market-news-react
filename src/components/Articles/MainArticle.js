@@ -16,7 +16,7 @@ function MainArticle({ news }) {
       >
         <img src={multimedia[0].url} alt="" />
         <div className={styles.mainArticleTitle}>
-          <h5>{published_date}</h5>
+          <h5>{published_date.substring(0, 10)}</h5>
           <h3>{title}</h3>
         </div>
       </a>

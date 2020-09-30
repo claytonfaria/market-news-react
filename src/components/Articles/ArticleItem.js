@@ -21,7 +21,7 @@ function ArticleItem({ news }) {
       </div>
       <div className={styles.articleRightside}>
         <h4>{news && news.title}</h4>
-        <h5>{news && news.published_date}</h5>
+        <h5>{news && news.published_date.substring(0, 10)}</h5>
         <p>{news.abstract && news.abstract}</p>
       </div>
     </a>
